@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Products</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="./js/vue.js"></script>
+    </head>
+    <body>
+        <div class="nav-bar"></div>
+
+        <div id="app">
+            <div class="cart">
+                <p>Cart({{ cart.length }})</p>
+            </div>
+            <product :premium="premium" @add-to-cart="updateCart"></product>    
+        </div>
+
+        <script src="./js/product.js"></script>        
+    </body>
+</html>
