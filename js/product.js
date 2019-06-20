@@ -57,22 +57,22 @@ Vue.component('product', {
      `,
     data() {
       return {
-          product: 'Socks',
+          product: 'Bottles',
           selectedVariant: 0,
-          details: ['80% cotton', '20% polyester', 'Gender-neutral'],
+          details: ['Satisfying to drink from', 'Made of metal and plastic', 'Whatever other details you would like to put here...'],
           reviews: [],
           variants: [
             {
               variantId: 2234,
-              variantColor: 'green',
-              variantImage: './assets/vmSocks-green.jpg',
-              variantQuantity: 10     
+              variantColor: 'purple',
+              variantImage: './assets/purple-bottle.jpg',
+              variantQuantity: 1     
             },
             {
               variantId: 2235,
-              variantColor: 'blue',
-              variantImage: './assets/vmSocks-blue.jpg',
-              variantQuantity: 0     
+              variantColor: 'orange',
+              variantImage: './assets/orange-bottle.jpg',
+              variantQuantity: 3     
             }
           ]
       }
