@@ -3,17 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -b master -d build",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
-  "homepage": "https://stermic2.github.io/",
+  "homepage": "https://github.com/stermic2/stermic2.github.io.git",
   "dependencies": {
     "core-js": "^3.6.5",
-    "gh-pages": "^3.1.0",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-gh-pages": "^1.19.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -42,5 +41,6 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "wst": "/dist/"
 }
