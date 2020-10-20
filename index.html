@@ -1,23 +1,17 @@
-<html>
-    <head>
-        <title>Products</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="./js/vue.js"></script>
-    </head>
-    <body>
-        <div class="nav-bar">
-            <p>This webpage is based off of Vue Mastery instruction program, and is meant to showcase a basic understanding of Front-End Development</p>
-            <p>It's Author(Michael Sterner) is a Computer Science major. See link to resume below. Please note: I do not claim ownership of the images. The images may be subject to copyright.</p>
-            <a href="./assets/ResumeJune2019.pdf">Resume</a>
-        </div>
-
-        <div id="app">
-            <div class="cart">
-                <p>Cart({{ cart.length }})</p>
-            </div>
-            <product :premium="premium" @add-to-cart="updateCart"></product>    
-        </div>
-
-        <script src="./js/product.js"></script>        
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+</noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
 </html>
