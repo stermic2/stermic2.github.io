@@ -1,8 +1,24 @@
 import Vue from 'vue'
 import App from './App.vue'
 import axios from 'axios'
+import VueRouter from "vue-router";
+
+import VueDynamicForms from "@asigloo/vue-dynamic-forms";
+
+Vue.use(VueDynamicForms);
+Vue.use(VueRouter);
 
 Vue.config.productionTip = false
+
+const routes = [
+  {
+    path: "/",
+    component: () => import("./components/HelloWorld")
+  }
+];
+const router = new VueRouter({
+  routes // short for `routes: routes`
+});
 
 Vue.use({
   install (Vue) {
@@ -14,4 +30,5 @@ Vue.use({
 
 new Vue({
   render: h => h(App),
+  router
 }).$mount('#app')

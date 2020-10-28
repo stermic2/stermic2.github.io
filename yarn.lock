@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@asigloo/vue-dynamic-forms@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@asigloo/vue-dynamic-forms/-/vue-dynamic-forms-2.1.0.tgz#1c0c96f7941ddcc41736413bdb8b93aa947d2db9"
+  integrity sha512-xm1IP8P8uXcqRZ1hRhbgp9ySqaW4BqO6dkz5FdTAyjtO2rpr9H7yMOtxIS7KPa/PxAWwt0nOHrfOKYlUUT/M/g==
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.4.tgz#168da1a36e90da68ae8d49c0f1b48c7c6249213a"
@@ -8209,6 +8214,11 @@ vue-loader@^15.9.2:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-router@^3.4.8:
+  version "3.4.8"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.4.8.tgz#2c06261d35d8075893470352d42d70b6287b8194"
+  integrity sha512-3BsR84AqarcmweXjItxw3jwQsiYNssYg090yi4rlzTnCJxmHtkyCvhNz9Z7qRSOkmiV485KkUCReTp5AjNY4wg==
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.2"
