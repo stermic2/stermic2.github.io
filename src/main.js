@@ -14,6 +14,14 @@ const routes = [
   {
     path: "/",
     component: () => import("./components/HelloWorld")
+  },
+  {
+    path: "/DynamicFormExample",
+    component: () => import("./components/DynamicFormExample")
+  },
+  {
+    path: "/Glossary",
+    component: () => import("./components/Glossary")
   }
 ];
 const router = new VueRouter({
