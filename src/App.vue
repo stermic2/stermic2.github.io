@@ -1,19 +1,24 @@
 <template>
-  <div class="container">
     <div id="app">
-      <ul>
-        <li>
-          <router-link to="/">Home</router-link>
-        </li>
-        <li>
-          <router-link to="/Glossary">Glossary</router-link>
-        </li>
-        <li>
-          <router-link to="/DynamicFormExample">Dynamic Form Example</router-link>
-        </li>
-      </ul>
-      <router-view></router-view>
-    </div>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Michael Sterner's Demo Page</a>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <router-link class="nav-link" to="/">Home</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/Glossary">Glossary</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/DynamicFormExample">Dynamic Form Example</router-link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main role="main">
+        <router-view></router-view>
+      </main>
   </div>
 </template>
 

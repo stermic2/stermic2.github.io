@@ -1,6 +1,5 @@
 <template>
-  <div class="hello">
-    <h1>{{ listData }}</h1>
+  <div class="jumbotron">
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -16,10 +15,11 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props:{
-    listData:[]
-  }
+  name: 'HelloWorld'
+}
+function getName(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  return profile.getGivenName();
 }
 </script>
 
