@@ -26,17 +26,19 @@
       </tr>
       </thead>
       <tbody>
-      <tr v-for="term in currentPage" v-bind:key="term.word">
-        <td>{{term.word}}</td>
-        <td class="w-75">{{term.definition}}</td>
+      <tr v-for="guest in guests" v-bind:key="guest.name">
+        <td>{{guest.name}}</td>
+        <td>{{guest.company}}</td>
+        <td>{{guest.position}}</td>
+        <td class="w-50">{{guest.message}}</td>
       </tr>
       </tbody>
     </table>
     <footer class="card-footer">
-      <div class="input-group-append">
+      <div class="float-right">
         <button class="btn btn-primary">Add New</button>
       </div>
-      <pagination total-items=></pagination>
+      <pagination></pagination>
     </footer>
   </div>
 </template>
@@ -46,10 +48,11 @@ import Pagination from "@/components/Common/pagination";
 export default {
   name: "Glossary",
   components: {Pagination},
-  data(){
-    return{
-      guests: []
-    }
+  props: {
+    guests: {
+      type: Array,
+      required: true
+    },
   },
   created() {
     this.$api.get('guests').then(response => {
