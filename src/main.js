@@ -13,15 +13,15 @@ Vue.config.productionTip = false
 const routes = [
   {
     path: "/",
-    component: () => import("./components/HelloWorld")
+    component: () => import("./pages/HomePage")
   },
   {
     path: "/DynamicFormExample",
     component: () => import("./components/DynamicFormExample")
   },
   {
-    path: "/Glossary",
-    component: () => import("./components/Glossary")
+    path: "/GuestBook",
+    component: () => import("./pages/GuestBook")
   }
 ];
 const router = new VueRouter({

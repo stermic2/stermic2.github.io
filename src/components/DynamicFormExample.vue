@@ -2,6 +2,7 @@
   <div id="app">
     <div class="container">
       <h1 class="title text-center">Dynamic Forms Example</h1>
+      <h1 class="text-center">Notice: the current setup below is a demo that I didn't write... I'm currently experimenting with this.</h1>
       <div class="row mt-5">
         <div class="col-6">
           <dynamic-form :id="testForm.id" :fields="testForm.fields" @change="valuesChanged"/>
