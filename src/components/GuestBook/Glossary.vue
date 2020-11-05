@@ -29,7 +29,7 @@
       <tr v-for="guest in guests" v-bind:key="guest.name">
         <td>{{guest.name}}</td>
         <td>{{guest.company}}</td>
-        <td>{{guest.position}}</td>
+        <td>{{guest.postition}}</td>
         <td class="w-50">{{guest.message}}</td>
       </tr>
       </tbody>

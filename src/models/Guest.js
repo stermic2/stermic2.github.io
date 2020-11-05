@@ -1,8 +1,8 @@
 export class Guest{
-    constructor(name, company, position, message) {
+    constructor(name, company, postition, message) {
         this.name = name;
         this.company = company;
-        this.position = position;
+        this.postition = postition;
         this.message = message;
     }
 }
