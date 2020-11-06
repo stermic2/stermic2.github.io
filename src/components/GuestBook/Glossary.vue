@@ -3,7 +3,7 @@
     <header class="card-header">
       <div class="row">
         <div class="col-12 col-lg-12">
-          <h3>Guest Book</h3>
+          <h3>Guest Book: Uses an API that sleeps, so you might have to wait for the first response.</h3>
         </div>
       </div>
     </header>
@@ -36,7 +36,7 @@
     </table>
     <footer class="card-footer">
       <div class="float-right">
-        <button class="btn btn-primary">Add New</button>
+        <button class="btn btn-primary">Working on this button</button>
       </div>
       <pagination></pagination>
     </footer>
