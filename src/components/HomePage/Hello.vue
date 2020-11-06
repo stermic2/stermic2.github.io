@@ -6,6 +6,11 @@
     <h3>Find Me Here</h3>
     <ul>
       <li><a href="https://www.linkedin.com/in/michael-sterner-474052180" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a target="_blank" rel="noopener">mikies006@gmail.com</a></li>
+    </ul>
+    <h3>I designed most of the backend for this:</h3>
+    <ul>
+      <li><a href="https://beta.timelabs.com/" target="_blank" rel="noopener">Time Labs Shop</a></li>
     </ul>
   </div>
 </template>

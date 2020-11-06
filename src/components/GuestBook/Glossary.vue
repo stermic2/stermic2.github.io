@@ -3,7 +3,7 @@
     <header class="card-header">
       <div class="row">
         <div class="col-12 col-lg-12">
-          <h3>Guest Book: Uses an API that sleeps, so you might have to wait for the first response.</h3>
+          <h3>Guest Book: Uses a free VM that sleeps, so you might have to wait for the first response.</h3>
         </div>
       </div>
     </header>
