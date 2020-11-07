@@ -22,6 +22,12 @@ const routes = [
   {
     path: "/GuestBook",
     component: () => import("./pages/GuestBook")
+  },
+  {
+    path: "./assets/CoverLetterJan2020.pdf",
+  },
+  {
+    path: "./assets/Federal Resume.pdf",
   }
 ];
 const router = new VueRouter({
