@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <vue-ads-pagination
-        :total-items="200"
+        @total-items="totalItems"
         :max-visible-pages="5"
         :page="page"
         :loading="loading"
@@ -43,10 +43,8 @@ export default {
   },
 
   props:{
-    totalItems:{
-      type:Number,
-      required:true
-    }
+    totalItems:Number,
+    currentPage:Number
   },
 
   data () {

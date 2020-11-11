@@ -36,9 +36,9 @@
     </table>
     <footer class="card-footer">
       <div class="float-right">
-        <button class="btn btn-primary">Working on this button</button>
+        <button class="btn btn-primary" @click="$router.push('/AddGuest')">Add</button>
       </div>
-      <pagination></pagination>
+      <pagination @total-items="this.numberOfGuests" @current-page="this.$route.query.page"></pagination>
     </footer>
   </div>
 </template>
@@ -48,18 +48,19 @@ import Pagination from "@/components/Common/pagination";
 export default {
   name: "Glossary",
   components: {Pagination},
-  props: {
-    guests: {
-      type: Array,
-      required: true
-    },
+  data() {
+    return {
+      guests: [],
+      numberOfGuests: Number
+    }
   },
   created() {
-    this.$api.get('guests').then(response => {
+    //this.$router.push({ query: Object.assign({}, this.$route.query, { page: '0', perPage: '10' }) });
+    this.$api.get('guests/count').then(response => {
+      this.numberOfGuests = response.data;
+    })
+    this.$api.get('guests?_start=' + (this.$route.query.page * this.$route.query.perPage) + '&_limit=' + this.$route.query.perPage).then(response => {
       this.guests = response.data;
-      this.numberOfGuests = this.guests.filter(guest => {
-        return guest.name
-      })
     })
   }
 }

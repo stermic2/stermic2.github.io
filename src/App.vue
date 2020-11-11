@@ -8,7 +8,7 @@
               <router-link class="nav-link" to="/">Home</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/GuestBook">Guest Book</router-link>
+              <router-link class="nav-link" to="/GuestBook?page=0&perPage=10">Guest Book</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/DynamicFormExample">Dynamic Form Example</router-link>
