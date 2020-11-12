@@ -24,10 +24,8 @@ const routes = [
     component: () => import("./pages/GuestBook")
   },
   {
-    path: "./assets/CoverLetterJan2020.pdf",
-  },
-  {
-    path: "./assets/Federal Resume.pdf",
+    path: "/AddGuest",
+    component: () => import("./pages/AddGuest")
   }
 ];
 const router = new VueRouter({
