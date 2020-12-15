@@ -26,6 +26,10 @@ const routes = [
   {
     path: "/AddGuest",
     component: () => import("./pages/AddGuest")
+  },
+  {
+    path: "/USGSsearch",
+    component: () => import("./components/USGSsearch")
   }
 ];
 const router = new VueRouter({
