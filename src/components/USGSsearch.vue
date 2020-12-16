@@ -9,7 +9,7 @@
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import $ from "jquery";
-
+import search_api from "usgssearch";
 export default {
   name: "Map",
   methods: {
@@ -22,8 +22,7 @@ export default {
         layers  : L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"),
         searchControl : {} // can specify options - those unspecified set to defaults
       });
-      // eslint-disable-next-line no-undef
-      search_api.create( "search2", {
+      this.search = search_api.create( "search2", {
         on_result: function(o) {
           // what to do when a location is found
           // o.result is geojson point feature of location with properties
@@ -51,9 +50,9 @@ export default {
 <style>
 #map1, .container {
   position      : relative;
-  width         : 90%;
-  max-width     : 1000px;
-  height        : 500px;
+  width         : 100%;
+  max-width     : 2000px;
+  height        : 850px;
   margin-bottom : 50px;
 }
 .map {
