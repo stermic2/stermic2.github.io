@@ -1,7 +1,7 @@
 <template>
   <div class="jumbotron">
     <p>
-      Why am I the best choice for your next hire? I am good at thinking outside of the box and finding the best tools for the most effective solution. My effectiveness is sensitive to any and all priorities that the are required of me.  I have a passion for efficient, modular, and reusable code solutions and love making dynamic tools.
+      Why am I the best choice for your next hire? I am good at thinking outside of the box and finding the best tools for the most effective solution. My effectiveness is sensitive to any and all priorities that are required of me.  I have a passion for efficient, modular, and reusable code solutions and love making dynamic tools.
     </p>
     <p>
       This Page is currently being developed and is unfinished in many places. I'm working full time while trying to put this up, so please understand.
