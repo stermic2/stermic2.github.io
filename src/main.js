@@ -30,6 +30,10 @@ const routes = [
   {
     path: "/USGSsearch",
     component: () => import("./components/USGSsearch")
+  },
+  {
+    path: "/DynamicCQ",
+    component: () => import("./components/DynamicCQ")
   }
 ];
 const router = new VueRouter({

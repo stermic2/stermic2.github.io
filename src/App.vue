@@ -16,6 +16,9 @@
             <li class="nav-item">
               <router-link class="nav-link" to="/USGSsearch">USGSsearch</router-link>
             </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/DynamicCQ">DynamicCQ</router-link>
+            </li>
           </ul>
         </div>
       </nav>
