@@ -14,7 +14,7 @@
     <h3>Resume:</h3>
     <ul>
       <li><a href="https://docs.google.com/viewer?url=https://github.com/stermic2/stermic2.github.io/raw/master/src/assets/Normal%20Resume.pdf" target="_blank">View</a></li>
-      <li><a href="https://github.com/stermic2/stermic2.github.io/raw/master/src/assets/Federal%20Resume.pdf" target="_blank" rel="noopener">Download</a></li>
+      <li><a href="https://github.com/stermic2/stermic2.github.io/raw/master/src/assets/Normal%20Resume.pdf" target="_blank" rel="noopener">Download</a></li>
     </ul>
     <h3>Federal Resume:</h3>
     <ul>
