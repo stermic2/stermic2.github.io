@@ -156,6 +156,9 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
+input{
+  border: 1px solid;
+}
 a {
   color: #42b983;
 }
