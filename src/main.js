@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import VueYouTube from 'vue-youtube'
 import App from './App.vue'
 import axios from 'axios'
 import VueRouter from "vue-router";
@@ -8,7 +7,6 @@ import VueDynamicForms from "@asigloo/vue-dynamic-forms";
 
 Vue.use(VueDynamicForms);
 Vue.use(VueRouter);
-Vue.use(VueYouTube);
 
 Vue.config.productionTip = false
 
