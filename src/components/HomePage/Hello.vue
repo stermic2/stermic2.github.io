@@ -21,7 +21,7 @@
       <li><a href="https://docs.google.com/viewer?url=https://github.com/stermic2/stermic2.github.io/raw/master/src/assets/Federal%20Resume.pdf" target="_blank">View</a></li>
       <li><a href="https://github.com/stermic2/stermic2.github.io/raw/master/src/assets/Federal%20Resume.pdf" target="_blank" rel="noopener">Download</a></li>
     </ul>
-    <h3>Find Me Here</h3>
+    <h3>Find Me Here:</h3>
     <ul>
       <li><a href="https://www.linkedin.com/in/michael-sterner-474052180" target="_blank" rel="noopener">LinkedIn</a></li>
       <li><a href="mailto:mikies006@gmail.com" target="_blank" rel="noopener">mikies006@gmail.com</a></li>
