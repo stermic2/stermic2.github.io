@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/stermic2.github.io/'
+    baseUrl: '/stermic2.github.io/'
 }
