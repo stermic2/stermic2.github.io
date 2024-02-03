@@ -6,20 +6,15 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "gh-pages-deploy": "node scripts/gh-pages-deploy.js"
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
-  "homepage": "/stermic2.github.io/",
+  "homepage": "https://github.com/stermic2/stermic2.github.io",
+
   "dependencies": {
     "@asigloo/vue-dynamic-forms": "^2.1.0",
     "core-js": "^3.6.5",
-    "gh-pages": "^3.1.0",
-    "jquery": "^3.5.1",
-    "leaflet": "^1.7.1",
-    "usgssearch": "^1.0.0",
     "vue": "^2.6.11",
-    "vue-ads-pagination": "^2.1.7",
-    "vue-router": "^3.4.8",
-    "vue-youtube": "^1.4.0"
+    "vue-gh-pages": "^1.19.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -50,5 +45,6 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "wst": "/dist/"
 }
