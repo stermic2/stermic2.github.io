@@ -1,17 +1,46 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="app">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Michael Sterner's Demo Page</a>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <router-link class="nav-link" to="/">Home</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/GuestBook?page=0&perPage=10">Guest Book</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/DynamicFormExample">Dynamic Form Example</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/USGSsearch">USGSsearch</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/DynamicCQ">DynamicCQ</router-link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main role="main">
+        <router-view></router-view>
+      </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return{
+      users: []
+    }
+  },
+  mounted() {
+    this.$api.get('resume-bodies').then(response => {
+      this.users = response.data
+    })
   }
 }
 </script>

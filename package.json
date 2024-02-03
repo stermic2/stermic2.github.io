@@ -9,7 +9,9 @@
     "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "homepage": "https://github.com/stermic2/stermic2.github.io",
+
   "dependencies": {
+    "@asigloo/vue-dynamic-forms": "^2.1.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-gh-pages": "^1.19.1"
@@ -18,9 +20,11 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "axios": "^0.21.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "execa": "latest",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
